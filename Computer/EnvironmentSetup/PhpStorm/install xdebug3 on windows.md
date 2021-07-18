@@ -114,3 +114,8 @@ File-->Setting-->Language & FrameWorks->PHP
   | /var/www       | /Users/liuyu/var/www/material |
 - 
 
+如果 nginx 端口映射为 82:80 那么
+
+File-->Setting-->Language & FrameWorks-->Servces
+
+port: 80
