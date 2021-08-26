@@ -119,3 +119,27 @@ File-->Setting-->Language & FrameWorks->PHP
 File-->Setting-->Language & FrameWorks-->Servces
 
 port: 80
+
+#### artisan comand on docker 
+
+> https://tsukie.com/en/technologies/debug-laravel-artisan-command-in-docker-with-xdebug-and-phpstorm/
+
+- Config the phpstorm cli interpreter
+
+   create a new CLI interpreter config from your docker/docker-compose setting
+
+- Setup debug configuration
+
+  open Run/Debug Configuration and create a new “PHP Script” configuration.
+
+  The “File” should point to your local machine’s Laravel artisan file.
+
+  In the “Arguments”, type in your artisan command’s parameters.
+
+  For the “Interpreter”, select the CLI that you have configured in step 2 above.
+
+  After finishing all the settings, apply and OK, and we’re good to go!
+
+- Set breakpoint, and start debugging process
+
+  ressing “Start debug” icon (as arrow 2) to start the debug session.
